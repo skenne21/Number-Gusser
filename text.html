@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" type="text/css">
-  
-  <title>Number Guesser</title>
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+ <link rel="stylesheet" href="style.css" type="text/css">
+ <title>Number Guesser</title>
 </head>
 
 <body>
-  <header>
-    <h1> Number 
-    <span class="white-font">Guesser</span></h1>
-  </header>
-  <br/>
-  <br/>
-  
-  <form class="form">
+ <!--> Header of the page </!-->
+ <header>
+  <h1> Number <span class="white-font"> Guesser </span> </h1>
+ </header>
+    <br/>
+    <br/>
 
+ <!--> form for input value and buttons</!-->
+ <form class="form">
     <label for="enter-guess" ></label>
-    <input id="enter-guess" type= "text"  return="false" placeholder="Enter Your Guess" >
+    <input id="enter-guess" type= "text" return="false" placeholder="Enter Your Guess" >
     <br/>
     <br/> 
     <br/>
+ <fieldset class="buttons">
 
-   <fieldset class="buttons">
-    <div class="buttons">
-
-     <button class="buttons" id="submit"  name="guess" type="button" disabled>Guess</button>
-
-     <button  class="buttons" id="clear" name="clear" type="button" disabled>Clear</button>
-   </div>
-
-   <div class="min-and-max-range-input">
-
-    <label for="min-number-range"> </label>
-  <input  id="min-number-range" type="text" placeholder="Min Range"> 
-
-  <label for="max-number-range"> </label>
-  <input id="max-number-range" type="text" placeholder="Max Range">
-
-  <button class="buttons" id="min-max-submit" name="submit" type="button"> Submit</button>
-
+  <!-->Divs for clear and submit </!-->
+  <div class="buttons">
+      <button class="buttons" id="submit"  name="guess" type="button" disabled>Guess</button>
+      <button  class="buttons" id="clear" name="clear" type="button" disabled>Clear</button>
   </div>
+
+  <!--> Div holds max and min input boxes and sumbit button for input</!-->
+
+  <div class="min-and-max-range-input">
+      <label for="min-number-range"> </label>
+      <input  id="min-number-range" type="text" placeholder="Min Range"> 
+      <label for="max-number-range"> </label>
+      <input id="max-number-range" type="text" placeholder="Max Range">
+      <button class="buttons" id="min-max-submit" name="submit" type="button"> Submit</button>
+
+ </div>
  
-   </fieldset>
+  </fieldset>
 
-   <p id="min-and-max-text"> Enter a Guess Between 0 and 100? </p> 
-   <p class="your-guess-was-text"> </p>
-   <p id="number-guessed"> ?? </p>
-   <p class="pink-text"> </p>
-  <br/>
-  <br/>
-   <button  class="buttons" id="reset-button" type="button" name="reset" disabled>Reset</button>
-  </form>
+  <!--> Text for User number value and prop of guess too high or too low</!-->
 
-  <script rel="script" type="text/javascript" src=javascrpit.js></script>
+    <p id="min-and-max-text"> Enter a Guess Between <span id="min-number">0</span> and <span id="max-number">100?</span> </p> 
+    <p class="your-guess-was-text"> </p>
+    <p id="number-guessed"> ?? </p>
+    <p class="pink-text"> </p>
+    <br/>
+    <br/>
+  <!-->Reset button</!-->
+    <button class="buttons" id="reset-button" type="button" name="reset" disabled>
+    Reset
+    </button>
+ </form>
+
+ <!-->link for javascript</!-->
+
+ <script rel="script" type="text/javascript" src=javascrpit.js></script>
 </body>
 </html>

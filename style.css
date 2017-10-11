@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-
+/* header style */
 
 header{
   display: ;
@@ -36,13 +36,15 @@ font-size: 65px;
 display: inline-block;
  }
 
+ /* Form style*/
+
 .form{
   display: relative;
   margin: auto 0 150px;
   text-align: center;
 }
-#enter-guess{
 
+#enter-guess{
   margin: auto 0;
   text-align: center;
   font-style:  Light 300;
@@ -57,9 +59,7 @@ display: inline-block;
  color:#FFFFFF;
  font-size: 25px;
  display: relative;
- margin: auto 20px;
- 
- 
+ margin: auto 20px; 
 }
 
 .buttons:disabled {
@@ -67,15 +67,11 @@ display: inline-block;
 }
 
 
-#submit:hover, #clear:hover, #reset-button:hover{
+#submit:hover, #clear:hover, #reset-button:hover, #min-max-submit:hover{
   background-color: #EB008B;
-
 }
 
-
-
 #submit{
-
   margin: auto 30px  auto 0px;
   border: none;
   border-radius: 2em;
@@ -83,8 +79,6 @@ display: inline-block;
   font-size: 25px;
   height: 35px;
   width: 200px;
-
-
 }
 
 #clear{
@@ -96,11 +90,34 @@ display: inline-block;
   font-size: 25px;
   height: 35px;
   width: 200px;
-
 }
 
+.min-and-max-range-input{
+  display: relative;
+  margin: 35px 30px 35px 90px;
+}
 
+#min-number-range{
+  display: absolute;
+  top: 150px;
+  width: 75px;
+  height: 35px;
+}
 
+#max-number-range{
+  display: absolute;
+  top: 150px;
+  width: 75px;
+  height: 35px;
+}
+
+#min-max-submit{
+  border: none;
+  border-radius: 2em;
+  background-color: #929497;
+  font-size: 25px;
+  height: 35px;
+  width: 200px;
 }
 
 p{
@@ -111,10 +128,7 @@ p{
 
 .your-guess-was-text{
   text-align: center;
-  margin: 0 auto;
-
-
-  
+  margin: 0 auto;  
 }
 
 #number-guessed{
