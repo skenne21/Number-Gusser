@@ -11,7 +11,7 @@
 
 /* header style */
 
-header{
+header {
   display: ;
   background-color: #404041;
   height: 150px;
@@ -111,7 +111,7 @@ display: inline-block;
   height: 35px;
 }
 
-#min-max-submit{
+#min-max-submit {
   border: none;
   border-radius: 2em;
   background-color: #929497;

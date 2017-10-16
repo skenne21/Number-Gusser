@@ -34,7 +34,7 @@ function enterKeyPress (event){
   if (event.keyCode === 13){
     submit();
   }
- console.log(event.keyCode)
+ 
 } 
 
 // function runs the submit button on the min and max range using the enter key
@@ -64,7 +64,6 @@ function enableDisableButton (){
     submitButton.removeAttribute('disabled', false);
     clearButton.removeAttribute('disabled', false);
     resetButton.removeAttribute('disabled', false);
-    console.log ('function enable');
   }
 } 
 
